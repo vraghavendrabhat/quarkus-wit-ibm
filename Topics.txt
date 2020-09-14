@@ -1,0 +1,127 @@
+
+
+
+
+---------------------------------------------------
+1. Scaffolding
+---------------------------------------------------
+
+
+ 1. Scaffolding a Quarkus project with Maven
+
+    > mvn io.quarkus:quarkus-maven-plugin:1.7.3.Final:create
+
+ 2. Scaffolding a Quarkus project with Gradle
+
+    > mvn io.quarkus:quarkus-maven-plugin:1.7.3.Final:create -DbuildTool=gradle
+
+ 3. Scaffolding a Quarkus project with  the Quarkus start coding website
+
+    > https://code.quarkus.io/
+
+4. Scaffolding a Quarkus project with  Eclipse/Inteelij IDEA/Visual studio code
+
+
+
+
+---------------------------------------------------
+2. Quarkus Project structure Overview
+---------------------------------------------------
+
+
+1. project structure & compile,test
+
+2. Live Reloading with Dev Mode
+
+
+---------------------------------------------------
+3. Developing Restfull services 
+---------------------------------------------------
+
+
+ -> JAX-RS
+
+    impln:
+
+      - RESTEasy
+      - Jersey
+      
+ -> Spring web-mvc
+
+
+
+1. Creating a simple REST api Endpoint
+
+2. Extracting request parameters
+
+3. Using semantic HTTP Response  codes
+
+4. Binding HTTP Method
+
+5. Enable CORS
+
+
+---------------------------------------------------
+4. Quarkus Configuration
+---------------------------------------------------
+
+1. Configuring the application with custom properties
+
+2. Accessing configuration properties programmatically
+
+3. Overwriting configuration values externally
+
+   - system properties   ( 1st priority ) 
+   - environment Variables ( 2nd priority )
+   - aplication properties/yaml Variables ( 3rd priority )
+
+   or
+
+   - depends on connfigsource ordinal
+
+4. Configuring with profiles
+
+   predefined profiles
+
+   - dev
+   - test
+   - prod  
+
+5. Configuring with custom profiles
+
+6. creating custom sources
+
+7. creating custom convertors
+
+
+
+---------------------------------------------------
+4. Quarkus - LOGS
+---------------------------------------------------
+
+
+1. changing Logger configuration
+
+2. Adding Application Logs
+
+
+   -> JDK java.util.Logging
+   -> JBOSS logging
+   -> SLFJ
+   -> Apache common Logging
+
+
+
+---------------------------------------------------
+5. Quarkus Programming Model
+---------------------------------------------------
+
+
+   - dependency injection using CDI spec
+   - interceptors 
+
+
+
+
+
+     
