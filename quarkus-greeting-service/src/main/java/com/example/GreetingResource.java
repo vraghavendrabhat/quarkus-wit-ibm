@@ -1,9 +1,11 @@
 package com.example;
 
+import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import javax.inject.Inject;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
@@ -17,6 +19,10 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.UriInfo;
+
+import org.eclipse.microprofile.config.Config;
+import org.eclipse.microprofile.config.inject.ConfigProperty;
+import org.jboss.logging.Logger;
 
 @Path("/hello")
 public class GreetingResource {
@@ -36,15 +42,38 @@ public class GreetingResource {
 		return "hello " + name;
 	}
 
+//	@ConfigProperty(name = "greeting.message",defaultValue = "hello")
+//	String message;
+	
+	@ConfigProperty(name="greeting.who")
+	List<String> who;
+	
+	@ConfigProperty(name = "greeting.date")
+	LocalDate localDate;
+	
+	
+	@Inject
+	Config config;
+	
+	
+	private static Logger logger=Logger.getLogger(GreetingResource.class);
+
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
 	public String hello(@HeaderParam("Accept-Language") String language, @Context UriInfo uriInfo) {
-		System.out.println(uriInfo.getAbsolutePath());
-		if ("es".equals(language)) {
-			return "ola";
-		} else {
-			return "hello";
-		}
+
+//		System.out.println(uriInfo.getAbsolutePath());
+//		if ("es".equals(language)) {
+//			return "ola";
+//		} else {
+//			return "hello";
+//		}
+		
+		logger.info("i said hello");
+		
+		String message=config.getValue("greeting.message", String.class);
+		return message +" "+who.get(1) + localDate.toString();
+
 	}
 
 	@POST

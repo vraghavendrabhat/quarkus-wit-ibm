@@ -50,9 +50,9 @@
 
 
 
-1.Creating a simple RESt api Endpoint
+1. Creating a simple REST api Endpoint
 
-2.Extracting request parameters
+2. Extracting request parameters
 
 3. Using semantic HTTP Response  codes
 
@@ -60,7 +60,66 @@
 
 5. Enable CORS
 
+
 ---------------------------------------------------
+4. Quarkus Configuration
+---------------------------------------------------
+
+1. Configuring the application with custom properties
+
+2. Accessing configuration properties programmatically
+
+3. Overwriting configuration values externally
+
+   - system properties   ( 1st priority ) 
+   - environment Variables ( 2nd priority )
+   - aplication properties/yaml Variables ( 3rd priority )
+
+   or
+
+   - depends on connfigsource ordinal
+
+4. Configuring with profiles
+
+   predefined profiles
+
+   - dev
+   - test
+   - prod  
+
+5. Configuring with custom profiles
+
+6. creating custom sources
+
+7. creating custom convertors
+
+
+
+---------------------------------------------------
+4. Quarkus - LOGS
+---------------------------------------------------
+
+
+1. changing Logger configuration
+
+2. Adding Application Logs
+
+
+   -> JDK java.util.Logging
+   -> JBOSS logging
+   -> SLFJ
+   -> Apache common Logging
+
+
+
+---------------------------------------------------
+5. Quarkus Programming Model
+---------------------------------------------------
+
+
+   - dependency injection using CDI spec
+   - interceptors 
+
 
 
 
