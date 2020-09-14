@@ -1,0 +1,68 @@
+
+
+
+
+---------------------------------------------------
+1. Scaffolding
+---------------------------------------------------
+
+
+ 1. Scaffolding a Quarkus project with Maven
+
+    > mvn io.quarkus:quarkus-maven-plugin:1.7.3.Final:create
+
+ 2. Scaffolding a Quarkus project with Gradle
+
+    > mvn io.quarkus:quarkus-maven-plugin:1.7.3.Final:create -DbuildTool=gradle
+
+ 3. Scaffolding a Quarkus project with  the Quarkus start coding website
+
+    > https://code.quarkus.io/
+
+4. Scaffolding a Quarkus project with  Eclipse/Inteelij IDEA/Visual studio code
+
+
+
+
+---------------------------------------------------
+2. Quarkus Project structure Overview
+---------------------------------------------------
+
+
+1. project structure & compile,test
+
+2. Live Reloading with Dev Mode
+
+
+---------------------------------------------------
+3. Developing Restfull services 
+---------------------------------------------------
+
+
+ -> JAX-RS
+
+    impln:
+
+      - RESTEasy
+      - Jersey
+      
+ -> Spring web-mvc
+
+
+
+1.Creating a simple RESt api Endpoint
+
+2.Extracting request parameters
+
+3. Using semantic HTTP Response  codes
+
+4. Binding HTTP Method
+
+5. Enable CORS
+
+---------------------------------------------------
+
+
+
+
+     
