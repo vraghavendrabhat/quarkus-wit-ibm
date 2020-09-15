@@ -89,9 +89,9 @@
 
 5. Configuring with custom profiles
 
-6. creating custom sources
+6. Creating custom sources
 
-7. creating custom convertors
+7. Creating custom convertors
 
 
 
@@ -104,6 +104,7 @@
 
 2. Adding Application Logs
 
+Using
 
    -> JDK java.util.Logging
    -> JBOSS logging
@@ -113,14 +114,29 @@
 
 
 ---------------------------------------------------
-5. Quarkus Programming Model
+5. Quarkus -  CDI
 ---------------------------------------------------
 
 
-   - dependency injection using CDI spec
-   - interceptors 
+1. DI in Quarkus
 
+2. Excuting Object Life Cycle Methods
 
+3. Executing Application Life Cycle Events
+
+4. creating interceptor
+
+   
+
+---------------------------------------------------
+6. Quarkus - ??
+---------------------------------------------------   
+
+1. Marshalling/Unmarshalling JSON & XML
+
+2. Validating Input and Output values
+
+---------------------------------------------------
 
 
 

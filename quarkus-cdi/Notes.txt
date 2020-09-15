@@ -1,0 +1,19 @@
+
+
+
+--------------------------------------------------------
+ - @Inject
+ - @ApplicationScopes / @Singleton
+ - @SessionScoped
+ - @RequestScoped
+ - @Dependent
+ - @Produces        => factory to create CDI beans
+ - @Named
+ - @Qualifier
+ - @DefaultBean
+ 
+ --------------------------------------------------------
+ 
+ --------------------------------------------------------
+  
+ 
