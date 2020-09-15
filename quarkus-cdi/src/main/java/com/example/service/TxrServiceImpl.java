@@ -2,6 +2,8 @@ package com.example.service;
 
 import java.util.Locale;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -9,6 +11,7 @@ import javax.inject.Named;
 import org.jboss.logging.Logger;
 
 import com.example.AccountRepositoryQualifier;
+import com.example.LogEvent;
 import com.example.MyQuarkusApplication;
 import com.example.entity.Account;
 import com.example.repository.AccountRepository;
@@ -86,22 +89,35 @@ public class TxrServiceImpl implements TxrService {
 //		this.accountRepository = accountRepository;
 		logger.info("TxrService instance created");
 	}
+	
+	@PostConstruct
+	public void init() {
+		System.out.println("init()");
+	}
+	
+	
+	@PreDestroy
+	public void cleanup() {
+		System.out.println("cleanup()");
+	}
+	
 
+	@LogEvent
 	@Override
 	public void txr(double amount, String fromAccNumber, String toAccNumber) {
 		// .
-		logger.info("txr intiated..");
-//		Account fromAccount = accountRepository.loadAccount(fromAccNumber);
-//		Account toAccount = accountRepository.loadAccount(toAccNumber);
+//		logger.info("txr intiated..");
+		Account fromAccount = accountRepository.loadAccount(fromAccNumber);
+		Account toAccount = accountRepository.loadAccount(toAccNumber);
 
 		// ..
 
-//		accountRepository.updateAccount(fromAccount);
-//		accountRepository.updateAccount(toAccount);
+		accountRepository.updateAccount(fromAccount);
+		accountRepository.updateAccount(toAccount);
 		
 		System.out.println(locale.getCountry());
 
-		logger.info("txr finished..");
+//		logger.info("txr finished..");
 		// ..
 	}
 

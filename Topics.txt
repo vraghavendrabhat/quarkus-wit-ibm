@@ -114,15 +114,29 @@ Using
 
 
 ---------------------------------------------------
-5. Quarkus - 
+5. Quarkus -  CDI
 ---------------------------------------------------
 
 
 1. DI in Quarkus
 
+2. Excuting Object Life Cycle Methods
+
+3. Executing Application Life Cycle Events
+
+4. creating interceptor
+
    
 
+---------------------------------------------------
+6. Quarkus - ??
+---------------------------------------------------   
 
+1. Marshalling/Unmarshalling JSON & XML
+
+2. Validating Input and Output values
+
+---------------------------------------------------
 
 
 
