@@ -18,6 +18,8 @@ public class MyQuarkusApplication implements io.quarkus.runtime.QuarkusApplicati
 	@Override
 	public int run(String... args) throws Exception {
 
+		txrService.txr(100.00, "1", "2");
+		
 		humanBean.live();
 		animalBean.live();
 
