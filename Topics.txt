@@ -140,4 +140,25 @@ Using
 
 
 
+---------------------------------------------------
+6. Quarkus - data Access
+---------------------------------------------------   
+
+
+1. defining datasource
+2. using multiple datasources
+3. Adding datasource Health check
+4. hibernate / JPA - ORM
+5. hibernate / JPA with panache wrapper
+6. Defining Transactional boundaries declaratively
+7. Programmatic Transactional control
+8. setting and Modifying transaction timeout
+
+
+---------------------------------------------------
+6. Quarkus -  MicroServices 
+---------------------------------------------------   
+
+
+
      
