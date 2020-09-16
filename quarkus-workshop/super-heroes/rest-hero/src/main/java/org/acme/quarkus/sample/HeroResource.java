@@ -33,7 +33,7 @@ public class HeroResource {
     @Inject
     HeroService service;
 
-    @Operation(summary = "Returns a random hero")
+    //@Operation(summary = "Returns a random hero")
     //@APIResponse(responseCode = "200", content = @Content(mediaType = APPLICATION_JSON, schema = @Schema(implementation = Hero.class, required = true)))
     @GET
     @Path("/random")
@@ -43,9 +43,9 @@ public class HeroResource {
         return Response.ok(hero).build();
     }
 
-    @Operation(summary = "Returns all the heroes from the database")
+    //@Operation(summary = "Returns all the heroes from the database")
     //@APIResponse(responseCode = "200", content = @Content(mediaType = APPLICATION_JSON, schema = @Schema(implementation = Hero.class, type = SchemaType.ARRAY)))
-    @APIResponse(responseCode = "204", description = "No heroes")
+    //@APIResponse(responseCode = "204", description = "No heroes")
     @GET
     public Response getAllHeroes() {
         List<Hero> heroes = service.findAllHeroes();
@@ -53,7 +53,7 @@ public class HeroResource {
         return Response.ok(heroes).build();
     }
 
-    @Operation(summary = "Returns a hero for a given identifier")
+    //@Operation(summary = "Returns a hero for a given identifier")
     //@APIResponse(responseCode = "200", content = @Content(mediaType = APPLICATION_JSON, schema = @Schema(implementation = Hero.class)))
     //@APIResponse(responseCode = "404", description = "The hero is not found for a given identifier")
     @GET
@@ -69,7 +69,7 @@ public class HeroResource {
         }
     }
 
-    @Operation(summary = "Creates a valid hero")
+    //@Operation(summary = "Creates a valid hero")
     //@APIResponse(responseCode = "201", description = "The URI of the created hero", content = @Content(mediaType = APPLICATION_JSON, schema = @Schema(implementation = URI.class)))
     //@APIResponse(responseCode = "400", description = "Invalid input")
     @POST
@@ -80,7 +80,7 @@ public class HeroResource {
         return Response.created(builder.build()).build();
     }
 
-    @Operation(summary = "Updates an exiting  hero")
+    //@Operation(summary = "Updates an exiting  hero")
     //@APIResponse(responseCode = "200", description = "The updated hero", content = @Content(mediaType = APPLICATION_JSON, schema = @Schema(implementation = Hero.class)))
     @PUT
     public Response updateHero(@Valid Hero hero) {
@@ -89,7 +89,7 @@ public class HeroResource {
         return Response.ok(hero).build();
     }
 
-    @Operation(summary = "Deletes an exiting hero")
+    //@Operation(summary = "Deletes an exiting hero")
     //@APIResponse(responseCode = "204")
     @DELETE
     @Path("/{id}")

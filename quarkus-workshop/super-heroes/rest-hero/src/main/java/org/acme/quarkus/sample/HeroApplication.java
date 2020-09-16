@@ -10,19 +10,19 @@ import org.eclipse.microprofile.openapi.annotations.servers.Server;
 import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 
 @ApplicationPath("/")
-@OpenAPIDefinition(
-	    info = @Info(title = "Hero API",
-	        description = "This API allows CRUD operations on a hero",
-	        version = "1.0",
-	        contact = @Contact(name = "Quarkus", url = "https://github.com/quarkusio")),
-	    servers = {
-	        @Server(url = "http://localhost:8083")
-	    },
-	    tags = {
-	        @Tag(name = "api", description = "Public that can be used by anybody"),
-	        @Tag(name = "heroes", description = "Anybody interested in heroes")
-	    }
-	)
+//@OpenAPIDefinition(
+//	    info = @Info(title = "Hero API",
+//	        description = "This API allows CRUD operations on a hero",
+//	        version = "1.0",
+//	        contact = @Contact(name = "Quarkus", url = "https://github.com/quarkusio")),
+//	    servers = {
+//	        @Server(url = "http://localhost:8083")
+//	    },
+//	    tags = {
+//	        @Tag(name = "api", description = "Public that can be used by anybody"),
+//	        @Tag(name = "heroes", description = "Anybody interested in heroes")
+//	    }
+//	)
 public class HeroApplication extends Application{
 
 }
