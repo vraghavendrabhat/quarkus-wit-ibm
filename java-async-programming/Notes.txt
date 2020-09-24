@@ -1,0 +1,26 @@
+
+
+
+
+/*
+ * 
+ *  s/w tasks
+ *  
+ *  	-> computation
+ *      -> io
+ * 
+ */
+ 
+ 
+ 
+                   # of cpus
+ # of threads <= ------------------
+                   blocking-factor 
+    
+    
+    
+    
+    
+    computation task , blocking factor = 1
+    
+    io task , blocking factor = 0 < BF < 1  , 0.5
