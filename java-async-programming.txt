@@ -1,0 +1,21 @@
+
+------------------------------------------------------------------
+how to implement async/non-blocking code in java-language ?
+------------------------------------------------------------------
+
+==> using 'reactive extensions' by third-party lib
+
+        ==> RxJava
+        ==> Spring Reactor
+        ==> Vertx
+
+------------------------------------------------------------------
+
+
+
+
+
+
+
+
+    

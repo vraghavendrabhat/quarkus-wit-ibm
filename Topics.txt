@@ -155,10 +155,76 @@ Using
 8. setting and Modifying transaction timeout
 
 
----------------------------------------------------
-6. Quarkus -  MicroServices 
----------------------------------------------------   
+------------------------------------------------------------------
+6. Quarkus -  MicroServices  using MicroProfile  speficification
+------------------------------------------------------------------
+
+   -> open-api
+   -> rest-client
+   -> fault-tolerent
+   -> health 
+   -> open tracing
+
+
+--------------------------------------------------------------
 
 
 
-     
+------------------------------------------------------------------
+7. Quarkus -  packaging 
+------------------------------------------------------------------
+
+   1.Creating a Runnable JAR file
+         > mvn clean package
+
+   2. Uber-JAR packaging
+         > mvn clean package -Dquarkus.package.uber-jar=true
+
+   3. Building a native Executable
+
+       Ref: https://quarkus.io/guides/building-native-image
+
+         > mvn clean package -Pnative
+         > mvn clean package -Pnative -Dquarkus.native.container-build=true  
+
+
+   4. Building a Docker Container for JAR file
+         > docker build -f src/main/docker/Dockerfile.jvm -t nagabhushanamn/quarkus-greeting-service . 
+
+  
+   5. Building a Docker Container for Native file
+         > docker build -f src/main/docker/Dockerfile.native -t nagabhushanamn/quarkus-greeting-service .             
+
+
+   ---------------------------------------------------------------------------
+
+
+
+
+------------------------------------------------------------------
+7. QUARKUS - CONTAINER IMAGE Extensions
+------------------------------------------------------------------
+
+
+
+   - JIB   
+   - Docker
+   - S2I
+
+----------------------------------------------------------------   
+
+
+------------------------------------------------------------------
+7. QUARKUS - Kubernetes extension
+------------------------------------------------------------------
+
+
+
+
+ 
+ 
+
+
+
+
+

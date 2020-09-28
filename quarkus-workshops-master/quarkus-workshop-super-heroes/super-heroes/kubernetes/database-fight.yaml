@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: fights-database
+    namespace: quarkus-workshop
+spec:
+    databaseCpu: 30m
+    databaseCpuLimit: 60m
+    databaseMemoryLimit: 512Mi
+    databaseMemoryRequest: 128Mi
+    databaseName: fight-database
+    databaseNameKeyEnvVar: POSTGRESQL_DATABASE
+    databasePassword: superfight
+    databasePasswordKeyEnvVar: POSTGRESQL_PASSWORD
+    databaseStorageRequest: 1Gi
+    databaseUser: superfight
+    databaseUserKeyEnvVar: POSTGRESQL_USER
+    image: centos/postgresql-96-centos7
+    size: 1

@@ -1,0 +1,52 @@
+
+
+
+container orchestration tools?
+
+
+    - docker-swarm
+    - kubernetes  ( most popular )
+    - mesos
+    ....
+
+
+
+vendor based kubernetes  distributions
+--------------------------------------
+
+Amazon AWS : EKS  
+Microsoft  : Azure Kubernetes
+Redhat     : Openshift         ( most used )
+             
+----------------------------------------------                
+
+
+how to interact  with kubernetes?
+
+2 ways
+
+    1. web console
+    2. cli tool
+
+        => kubectl
+        => oc
+        ....
+
+------------------------------------------------
+
+Term
+---------
+
+   ==> pod
+
+    ==> Deployment
+
+        ==> Services
+
+           ==> Route 
+
+-------------------------------------------------           
+
+
+
+        
